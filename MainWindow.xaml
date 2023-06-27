@@ -1,0 +1,100 @@
+﻿<Window x:Class="TP_final.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP_final"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="300">
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Border BorderThickness="4" BorderBrush="Black" Grid.ColumnSpan="4" Grid.Column="0" Margin="20">
+            <TextBlock Name="pantalla" VerticalAlignment="Center" HorizontalAlignment="Right"></TextBlock>
+        </Border>
+
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Margin="10,0,10,10" Click="botonLimpiar" Background="LightSteelBlue" Height="57" VerticalAlignment="Bottom">Limpiar</Button>
+            <Button Grid.Row="1" Margin="10" Click="botonNumeros" Background="LightSteelBlue">7</Button>
+            <Button Grid.Row="2" Margin="10" Click="botonNumeros" Background="LightSteelBlue">4</Button>
+            <Button Grid.Row="3" Margin="10" Click="botonNumeros" Background="LightSteelBlue">1</Button>
+            <Button Grid.Row="4" Margin="10" Click="botonSignos" Background="LightSteelBlue">+/-</Button>
+        </Grid>
+
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="1" Margin="10" Click="botonNumeros" Background="LightSteelBlue">8</Button>
+            <Button Grid.Row="2" Margin="10" Click="botonNumeros" Background="LightSteelBlue">5</Button>
+            <Button Grid.Row="3" Margin="10" Click="botonNumeros" Background="LightSteelBlue">2</Button>
+            <Button Grid.Row="4" Margin="10" Click="botonNumeros" Background="LightSteelBlue">0</Button>
+        </Grid>
+
+        <Grid Grid.Column="2" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="1" Margin="10" Click="botonNumeros" Background="LightSteelBlue">9</Button>
+            <Button Grid.Row="2" Margin="10" Click="botonNumeros" Background="LightSteelBlue">6</Button>
+            <Button Grid.Row="3" Margin="10" Click="botonNumeros" Background="LightSteelBlue">3</Button>
+            <Button Grid.Row="4" Margin="10" Click="botonPunto" Background="LightSteelBlue">.</Button>
+        </Grid>
+
+        <Grid Grid.Column="3" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Margin="10" Click="botonOperadores" Background="LightSteelBlue">/</Button>
+            <Button Grid.Row="1" Margin="10" Click="botonOperadores" Background="LightSteelBlue">x</Button>
+            <Button Grid.Row="2" Margin="10" Click="botonOperadores" Background="LightSteelBlue">-</Button>
+            <Button Grid.Row="3" Margin="10" Click="botonOperadores" Background="LightSteelBlue">+</Button>
+            <Button Grid.Row="4" Margin="10" Click="botonIgual" Background="LightSteelBlue">=</Button>
+        </Grid>
+    </Grid>
+</Window>
